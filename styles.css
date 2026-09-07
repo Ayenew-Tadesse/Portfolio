@@ -232,6 +232,7 @@ textarea:focus-visible {
 
 .btn {
   display: inline-block;
+  width: 160px;
   padding: 13px 26px;
   border-radius: var(--radius-sm);
   font-weight: 600;
