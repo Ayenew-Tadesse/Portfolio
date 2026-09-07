@@ -244,16 +244,12 @@ textarea:focus-visible {
 .btn:hover { transform: translateY(0px); }
 
 .btn--solid {
-  width: 160px;
-  align-items: center;
   background: var(--navy);
   color: var(--white);
 }
 .btn--solid:hover { background: var(--navy-2); }
 
 .btn--outline {
-  width: 160px;
-  align-items: center;
   background: transparent;
   color: var(--navy);
 }
