@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBE Banking App — Case Study | Ayenew Shiferaw</title>
+<meta name="description" content="Case study coming soon: a mobile banking experience focused on clear, trustworthy transaction flows.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<main id="main">
+  <section class="case-hero">
+    <div class="container">
+      <a class="case-hero__back" href="index.html#projects">&larr; Back to projects</a>
+      <p class="status-pill status-pill--progress">Coming soon</p>
+      <h1>CBE Banking App</h1>
+      <p class="hero__desc">A mobile banking experience focused on clear, trustworthy transaction flows.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="case-block" style="text-align:center;">
+        <h2>This case study is still in progress</h2>
+        <p>I'm finishing up the write-up and screens for this project. In the meantime, feel free to reach out if you'd like a preview or want to know more about the work.</p>
+        <div style="margin-top:24px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn btn--solid" href="mailto:shiferawayenew0@gmail.com">Email me about this project</a>
+          <a class="btn btn--outline" href="index.html#projects">Back to projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2026 Ayenew Shiferaw. All rights reserved.</div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.querySelector(".nav__toggle");
+  var links = document.querySelector(".nav__links");
+  if (!toggle || !links) return;
+
+  toggle.addEventListener("click", function () {
+    var isOpen = links.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  links.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      links.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+
+</script>
+</body>
+</html>
